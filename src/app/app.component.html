@@ -1,3 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary" class="mat-elevation-z24">
+  <h1>Figgé Consulting</h1>
+  <span class="spacer"></span>
+  <a mat-button [routerLink]="['home']" routerLinkActive="active">HOME</a>
+  <a mat-button [routerLink]="['cv']" routerLinkActive="active">CV</a>
+  <a mat-button [routerLink]="['contact']" routerLinkActive="active">CONTACT</a>
+</mat-toolbar>
 
-<app-page></app-page>
+<router-outlet></router-outlet>
