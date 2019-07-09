@@ -7,5 +7,10 @@
   </mat-card-header>
   <mat-card-content>
     {{page.content}}
+    <mat-list>
+      <mat-list-item *ngFor="let link of page.links">
+        {{link.label}}:&nbsp;<a href="{{link.href}}">{{link.title}}</a>
+      </mat-list-item>
+    </mat-list>
   </mat-card-content>
 </mat-card>
